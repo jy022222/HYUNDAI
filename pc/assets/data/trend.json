@@ -1,0 +1,67 @@
+{
+    "list1": [{
+            "id": 0,
+            "cate": "매거 faf진",
+            "title": "3분쇼핑 EP.4",
+            "thumb": "https://www.ehyundai.com/html/main/20231103/img_con_3m_42_mb.jpg",
+            "desc": "연말의 홀리데이를 준비하는 너에게"
+        },
+        {
+            "id": 0,
+            "cate": "매거진",
+            "title": "그로서리가이드 EP.14",
+            "thumb": "https://www.ehyundai.com/html/main/20231024/img_cont_mb_ep14_grocery.jpg",
+            "desc": "THE HIP하게 가을라면 즐기기"
+        },
+        {
+            "id": 0,
+            "cate": "매거진",
+            "title": "에디토리얼 디파트먼트",
+            "thumb": "https://www.ehyundai.com/html/main/20231006/con_now_edi_mb.jpg",
+            "desc": "세상에 하나뿐인 지속가능한 콘텐츠를 찾아서"
+        }
+    ],
+    "list2": [{
+            "id": 0,
+            "cate": "유튜브",
+            "title": "지금현대",
+            "thumb": "https://www.ehyundai.com/html/main/20230904/img_contents_mb_omega.png",
+            "desc": "오메가(OMEGA)"
+        },
+        {
+            "id": 0,
+            "cate": "유튜브",
+            "title": "지금현대",
+            "thumb": "https://www.ehyundai.com/html/main/20230904/img_contents_mb_piaget.png",
+            "desc": "피아제(PIAGET)"
+        },
+        {
+            "id": 0,
+            "cate": "유튜브",
+            "title": "워크인현대 어텀 컬러 플레이",
+            "thumb": "https://www.ehyundai.com/html/main/20231012/con_now_kim_mb.jpg",
+            "desc": "모델 김진경의 가을 컬러 스타일링 팁"
+        },
+        {
+            "id": 0,
+            "cate": "블로그",
+            "title": "FASHION",
+            "thumb": "https://www.ehyundai.com/html/main/20231101/img_con_now_fashion_pc.jpg",
+            "desc": "가을패션의 완성, 슈즈리스트"
+        },
+        {
+            "id": 0,
+            "cate": "매거진",
+            "title": "스타일H",
+            "thumb": "https://www.ehyundai.com/html/main/20231101/img_con_now_style_mb.jpg",
+            "desc": "2023년 11월호 STYLE H"
+        },
+        {
+            "id": 0,
+            "cate": "유튜브",
+            "title": "지금현대",
+            "thumb": "https://www.ehyundai.com/html/main/20230904/img_contents_mb_gucci.png",
+            "desc": "구찌(GUCCI)"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "list": [{
+            "id": 0,
+            "cate": "전시",
+            "title": "프레드, 주얼리 크리에이터 <br> Since 1936",
+            "thumb": "https://www.ehyundai.com/html/main/20231025/con_culture_fred_mb.jpg",
+            "date": "11.11(토) ~ 12.25(월)"
+        },
+        {
+            "id": 0,
+            "cate": "전시",
+            "title": "곰곰이와 찬찬이 <br> 안녕하세요",
+            "thumb": "https://www.ehyundai.com/html/main/20231021/con_culture_gomgom_mb.jpg",
+            "date": "11.11(토) ~ 12.25(월)"
+        },
+        {
+            "id": 0,
+            "cate": "전시",
+            "title": "「ART-FLEX」 <br> 박창환 & 이다겸 2인전",
+            "thumb": "https://www.ehyundai.com/html/main/20231113/con_culture_art_mb.jpg",
+            "date": "11.03(금) ~ 12.31(일)"
+        },
+        {
+            "id": 0,
+            "cate": "전시",
+            "title": "「노동식 <br> <Dream of the Cloud>",
+            "thumb": "https://www.ehyundai.com/html/main/20231113/con_culture_dream_mb.jpg",
+            "date": "10.17(화) ~ 11.26(일)"
+        },
+        {
+            "id": 0,
+            "cate": "전시",
+            "title": "「디자인 페스티벌",
+            "thumb": "https://www.ehyundai.com/html/main/20231113/con_culture_festival_v2_mb.jpg",
+            "date": "11.13(화) ~ 11.26(일)"
+        },
+        {
+            "id": 0,
+            "cate": "전시",
+            "title": "「니콜라스 줄리앙(Nicolas Jullien <br> <니코의 선반>",
+            "thumb": "https://www.ehyundai.com/html/main/20231113/con_culture_nico_mb.jpg",
+            "date": "11.01(수) ~ 01.29(월)"
+        },
+        {
+            "id": 0,
+            "cate": "CH1985 ∙ 문화센터",
+            "title": "문화센터 <br> 겨울시즌 수강신청",
+            "thumb": "https://www.ehyundai.com/html/main/20231024/img_con_culture_winter_mb.jpg",
+            "date": ""
+        }
+    ]
+}

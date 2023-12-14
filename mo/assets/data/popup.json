@@ -1,0 +1,35 @@
+{
+    "list": [{
+            "id": 0,
+            "cate": "",
+            "title": "La Boutique d Harry",
+            "thumb": "https://www.ehyundai.com/html/main/20231101/img_con_popup_la_mb.jpg",
+            "desc": "아기곰 해리가 할아버지의 꿈을 위해 <br> 준비한 크리스마스 마켓으로 초대합니다!",
+            "date": "11.01(수) ~ 12.25(일)"
+        },
+        {
+            "id": 0,
+            "cate": "",
+            "title": "디즈니 스토어",
+            "thumb": "https://www.ehyundai.com/html/main/20231026/img_con_popup_disney_mb.jpg",
+            "desc": "모두의 꿈과 희망을 담은 디즈니 스토어가 현대에 <br> 상륙했습니다!",
+            "date": ""
+        },
+        {
+            "id": 0,
+            "cate": "더현대 대구",
+            "title": "조구만 스튜디오",
+            "thumb": "https://www.ehyundai.com/html/main/20231026/img_con_popup_jo_mb.jpg",
+            "desc": "대구를 접수한 열마리의 공룡들 <br> 브라키오 친구들을 만나보세요!",
+            "date": "10.20(금) ~ 11.24(금)"
+        },
+        {
+            "id": 0,
+            "cate": "더현대 서울",
+            "title": "골든피스 팝업스토어",
+            "thumb": "https://www.ehyundai.com/html/main/20231026/img_con_popup_golden_mb.jpg",
+            "desc": "소중한 사람들과 나눠 먹을 수 있는 <br> 달콤한 선물을 '금쪽' 약과에서 준비하세요.",
+            "date": "10.17(화) ~ 12.16(토)"
+        }
+    ]
+}

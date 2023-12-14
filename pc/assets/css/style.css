@@ -1,0 +1,1939 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+input[type=button],
+input[type=text],
+input[type=image],
+input[type=submit],
+input[type=password],
+input[type=tel],
+input[type=number],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+}
+
+textarea {
+  resize: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* 세팅 */
+body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Happiness-Sans", "Noto Sans", Arial, dotum, "sans-serif";
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  color: #171A19;
+  font-weight: 400;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.container .headline {
+  padding-bottom: 32px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding-bottom: 3px;
+  background: #171a19;
+}
+.tag span {
+  position: relative;
+  display: block;
+  margin: 0 -3px 0 3px;
+  padding: 2px 8px 3px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  z-index: 3;
+}
+
+.tag:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid #171a19;
+}
+
+.btn_wrap {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 12px;
+  text-align: right;
+}
+.btn_wrap .swiper-button-prev,
+.btn_wrap .swiper-button-next {
+  position: static !important;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 0;
+}
+.btn_wrap .swiper-button-prev {
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_right_28_black.png) center/contain no-repeat;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.btn_wrap .swiper-button-next {
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_right_28_black.png) center/contain no-repeat;
+}
+.btn_wrap .swiper-button-prev:after,
+.btn_wrap .swiper-button-next:after {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  width: 1440px;
+  height: 70px;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header.fixed {
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1440px;
+}
+.header .col_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .logo {
+  position: relative;
+}
+.header .logo > a {
+  display: inline-block;
+  width: 139px;
+  height: 22px;
+  background: url(https://www.ehyundai.com/images/webhome2/logo.png) 0 0/cover no-repeat;
+  margin-left: 32px;
+}
+.header .logo .btn_site {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://www.ehyundai.com/images/webhome2/btn_gnb_20.png) center/contain no-repeat;
+  vertical-align: top;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.header .logo .brand_list {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 231px;
+  height: 0;
+  height: 105px;
+  padding: 12px 0 20px;
+  background: #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header .logo .brand_list.show {
+  opacity: 1;
+  visibility: visible;
+  height: 105px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header .logo .brand_list li {
+  padding: 16px 0 16px 51px;
+}
+.header .logo .brand_list li a {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.header .logo .brand_list li a:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: -4px 12px 0 0;
+  vertical-align: top;
+}
+.header .logo .brand_list li ~ li {
+  border-top: 1px solid #eaebea;
+}
+.header .logo .brand_list li:first-child {
+  padding-top: 0;
+}
+.header .logo .brand_list li:first-child a:before {
+  background: url(https://www.ehyundai.com/images/webhome2/logo_hdd_gate_logo_36.png) center/contain no-repeat;
+}
+.header .logo .brand_list li:nth-child(2) a:before {
+  background: url(https://www.ehyundai.com/images/webhome2/logo_hdc_gate_logo_36.png) center/contain no-repeat;
+}
+.header .gnb {
+  margin-left: 16px;
+}
+.header .gnb > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+.header .gnb > ul > .depth1 {
+  display: inline-block;
+  height: 100%;
+  line-height: 70px;
+  padding: 0 16px;
+}
+.header .gnb > ul > .depth1 > a {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.header .gnb > ul > .depth1 > a.on {
+  font-weight: 700;
+}
+.header .gnb > ul > .depth1 > a.on:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #171a19;
+}
+.header .gnb > ul > .depth1 .depth2 {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 1440px;
+  padding: 40px 0 64px;
+  background: #fff;
+  display: none;
+}
+.header .gnb > ul > .depth1 .depth2.on {
+  display: block;
+}
+.header .gnb > ul > .depth1 .depth2 .tit {
+  display: inline-block;
+  width: 220px;
+}
+.header .gnb > ul > .depth1 .depth2 .tit p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-left: 55px;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+}
+.header .gnb > ul > .depth1 .depth2 > ul {
+  display: inline-block;
+  margin-top: 9px;
+  vertical-align: top;
+}
+.header .gnb > ul > .depth1 .depth2 > ul > li {
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: top;
+  line-height: 1;
+}
+.header .gnb > ul > .depth1 .depth2 > ul > li > a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.header .gnb > ul > .depth1 .depth2 .depth3 {
+  margin-top: 20px;
+}
+.header .gnb > ul > .depth1 .depth2 .depth3 li {
+  margin-bottom: 12px;
+  line-height: initial;
+}
+.header .gnb > ul > .depth1 .depth2 .depth3 li a {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.header .gnb > ul > .depth1 .depth2 .banner {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 284px;
+}
+.header .gnb > ul > .depth1 .depth2 .banner img {
+  width: 284px;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .col_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .dim {
+  display: none;
+}
+.header .utils > ul > li {
+  display: inline-block;
+  padding: 0 8px;
+}
+.header .utils > ul > li a {
+  color: #727573;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.header .utils > ul > li.language {
+  position: relative;
+  padding-right: 20px;
+  vertical-align: top;
+  margin-top: -2px;
+}
+.header .utils > ul > li.language > a {
+  display: block;
+  width: 40px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/btn_lang.png) center/contain no-repeat;
+}
+.header .utils > ul > li.language ul {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  background: #fff;
+  padding: 12px;
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.header .utils > ul > li.language ul li ~ li {
+  padding-top: 16px;
+}
+.header .utils > ul > li.language ul a {
+  color: #171a19;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.header .utils > ul > li.language.on ul {
+  height: 94px;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header .search_area button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 190px;
+  height: 70px;
+  background: #171a19;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .search_area button span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.header .search_area button:after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 20px;
+  height: 20px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_gnb_search_20.png) center/contain no-repeat;
+}
+.header .search_area button:hover {
+  background: #00815A;
+}
+.header .all_search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 384px;
+  background: #fff;
+  padding-top: 88px;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .all_search.show {
+  visibility: visible;
+  opacity: 1;
+}
+.header .all_search.show + .dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.header .all_search .btn_close {
+  position: absolute;
+  top: 40px;
+  left: calc(50% + 600px);
+  width: 32px;
+  height: 32px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_close_32_black.png) center/contain no-repeat;
+}
+.header .all_search .form_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .all_search .form_area form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .all_search .form_area form .select {
+  height: 74px;
+  margin-right: 8px;
+}
+.header .all_search .form_area form .select a {
+  position: relative;
+  display: block;
+  width: 288px;
+  padding: 22px 23px;
+  border: 1px solid #eaebea;
+}
+.header .all_search .form_area form .select a span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.header .all_search .form_area form .select a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_dropdown_24.png) center/contain no-repeat;
+}
+.header .all_search .form_area form .search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .all_search .form_area form .search input {
+  width: 565px;
+  height: 74px;
+  border: 1px solid #eaebea;
+  padding: 0 24px;
+  font-size: 16px;
+}
+.header .all_search .form_area form .search input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.header .all_search .form_area form .search input::-moz-placeholder {
+  font-size: 14px;
+}
+.header .all_search .form_area form .search input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.header .all_search .form_area form .search input::-ms-input-placeholder {
+  font-size: 14px;
+}
+.header .all_search .form_area form .search input::placeholder {
+  font-size: 14px;
+}
+.header .all_search .form_area form .search input:focus {
+  border: 1px solid #171a19;
+  outline: none;
+}
+.header .all_search .form_area form .search .btn_sch {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  background: #171a19;
+}
+.header .all_search .form_area form .search .btn_sch::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_search_32_white.png) center/contain no-repeat;
+  vertical-align: top;
+}
+.header .all_search .keyword_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 72px;
+}
+.header .all_search .keyword_area h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.header .all_search .keyword_area .keyword_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.header .all_search .keyword_area .keyword_list a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.footer {
+  height: 538px;
+  background: #171a19;
+}
+.footer .inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.footer .logo {
+  position: relative;
+  width: 206px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/logo_footer.png) center/contain no-repeat;
+  margin-right: 157px;
+}
+.footer .cont {
+  position: relative;
+  width: 1077px;
+}
+.footer .cont .link_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .cont .link_area .site ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 56px;
+}
+.footer .cont .link_area .site ul a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+}
+.footer .cont .link_area .group {
+  position: relative;
+  width: 160px;
+  margin: -13px 0;
+  z-index: 4;
+}
+.footer .cont .link_area .group .tit {
+  width: 160px;
+}
+.footer .cont .link_area .group .tit a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 11px 48px 11px 16px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  color: #d4d6d4;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.footer .cont .link_area .group .tit a.on {
+  border: 1px solid #434545;
+}
+.footer .cont .link_area .group .tit a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_down_24_gray.png) center/contain no-repeat;
+}
+.footer .cont .link_area .group .tit a.on:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.footer .cont .link_area .group ul {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  max-height: 331px;
+  overflow-y: auto;
+  padding: 6px 0;
+  background: #171a19;
+  border: 1px solid #434545;
+  display: none;
+}
+.footer .cont .link_area .group ul.show {
+  display: block;
+}
+.footer .cont .link_area .group ul a {
+  display: block;
+  padding: 6px 16px;
+  font-size: 12px;
+  color: #d4d6d4;
+  line-height: 1.4;
+}
+.footer .cont .menu_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+}
+.footer .cont .menu_area .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .cont .menu_area .menu > ul {
+  margin-right: 80px;
+}
+.footer .cont .menu_area .menu > ul li {
+  margin-bottom: 16px;
+}
+.footer .cont .menu_area .menu > ul a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9b9e9c;
+  line-height: 1.5;
+}
+.footer .cont .menu_area .menu > ul a strong {
+  color: #fff;
+}
+.footer .cont .menu_area .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 224px;
+}
+.footer .cont .menu_area .sns li {
+  width: 50%;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.footer .cont .menu_area .sns li a {
+  font-size: 14px;
+  color: #9b9e9c;
+  line-height: 24px;
+}
+.footer .cont .adr_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 68px;
+}
+.footer .cont .adr_area .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 760px;
+}
+.footer .cont .adr_area .address p {
+  font-size: 14px;
+  color: #9b9e9c;
+  line-height: 1.5;
+}
+.footer .cont .adr_area .address p:nth-child(4) {
+  padding-left: 0;
+  margin-left: 0;
+}
+.footer .cont .adr_area .address p:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 1px;
+  height: 10px;
+  background: #727573;
+}
+.footer .cont .adr_area .address p ~ p {
+  position: relative;
+  margin-left: 8px;
+  padding-left: 9px;
+}
+.footer .cont .adr_area .language {
+  position: absolute;
+  right: 0;
+  bottom: 68px;
+  width: 105px;
+  z-index: 3;
+}
+.footer .cont .adr_area .language .tit a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 11px 36px 11px 14px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  color: #d4d6d4;
+  line-height: 1.5;
+}
+.footer .cont .adr_area .language .tit a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_down_16_gray.png) center/contain no-repeat;
+}
+.footer .cont .adr_area .language .tit a.on {
+  border: 1px solid #434545;
+}
+.footer .cont .adr_area .language .tit a.on:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.footer .cont .adr_area .language ul {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  max-height: 331px;
+  overflow-y: auto;
+  padding: 6px 0;
+  border: 1px solid #434545;
+  background: #171a19;
+  display: none;
+}
+.footer .cont .adr_area .language ul.show {
+  display: block;
+}
+.footer .cont .adr_area .language ul a {
+  display: block;
+  padding: 6px 16px;
+  font-size: 12px;
+  color: #d4d6d4;
+  line-height: 1.4;
+}
+.footer .cont .copyright {
+  display: block;
+  margin-top: 32px;
+  font-size: 14px;
+  color: #9b9e9c;
+  line-height: 1.5;
+}
+.footer .cont .certi_area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer .cont .certi_area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .cont .certi_area ul a {
+  display: block;
+}
+
+#wrap {
+  min-width: 1600px;
+}
+
+.inner {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.sc_visual {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: calc(max(min(2560px, 100vw), 1920px) * 0.4583);
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sc_visual .btn_wrap {
+  top: auto;
+  left: auto;
+  bottom: 40px;
+  right: 108px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  z-index: 2;
+}
+.sc_visual .btn_wrap .swiper-button-prev {
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_right_28_white.png) center/contain no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sc_visual .btn_wrap .swiper-button-next {
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_right_28_white.png) center/contain no-repeat;
+}
+.sc_visual .btn_wrap .btn_pause {
+  width: 28px;
+  height: 28px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_pause_28_white.png) center/contain no-repeat;
+}
+.sc_visual .btn_wrap .btn_pause.focus {
+  background: url(https://www.ehyundai.com/images/webhome2/ico_play_28_white.png) center/contain no-repeat;
+}
+
+.visual_slider {
+  position: relative;
+  width: 62.5%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  z-index: 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.on .visual_slider {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.visual_slider .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.visual_slider .swiper-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.visual_slider .swiper-pagination {
+  top: auto;
+  bottom: 53px;
+  left: 100px;
+  right: 383px;
+  width: 577px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.visual_slider .swiper-pagination .swiper-pagination-progressbar-fill {
+  background: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 37.5%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.on .banner {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sc_store {
+  position: relative;
+  margin-top: 96px;
+}
+.sc_store .headline {
+  font-size: 40px;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+.sc_store .headline a {
+  position: relative;
+}
+.sc_store .headline a:after {
+  content: "";
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 12px;
+  width: 40px;
+  height: 40px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_dropdown_40.png) center/contain no-repeat;
+  vertical-align: top;
+}
+.sc_store .title {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  text-align: right;
+}
+.sc_store .title strong {
+  display: block;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.sc_store .title span {
+  display: inline-block;
+  padding-left: 24px;
+  background: #fff;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+.sc_store .info_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 56px;
+  margin-top: 56px;
+}
+.sc_store .info_content .thumb {
+  position: relative;
+  width: 804px;
+  height: 232px;
+  background: url(https://www.ehyundai.com/images/webhome2/main/branch/img_pc_branch_main_B00140000.jpg) 0 0/cover no-repeat;
+}
+.sc_store .info_content .thumb a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(168.48deg, rgba(0, 0, 0, 0) 11.61%, rgba(0, 0, 0, 0.5) 85.71%);
+}
+.sc_store .info_content .thumb img {
+  width: 804px;
+  height: 232px;
+}
+.sc_store .info_content .thumb .btn_link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 200px;
+  padding: 10px 70px 9px 16px;
+  background: #171a19;
+}
+.sc_store .info_content .thumb .btn_link span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+}
+.sc_store .info_content .thumb .btn_link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_btn_arrow_right_white.png) center/contain no-repeat;
+}
+.sc_store .info_content > div:nth-child(2) {
+  height: 232px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #171a19;
+}
+.sc_store .info_content .data .time {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.sc_store .info_content .data li {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 14px);
+  padding-left: 11px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.sc_store .info_content .data li:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: #434545;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.sc_store .info_content .data li strong {
+  margin-left: 14px;
+  font-weight: 700;
+}
+.sc_store .info_content .link_list {
+  margin-top: 32px;
+}
+.sc_store .info_content .link_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 56px;
+}
+.sc_store .info_content .link_list ul a {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+  white-space: nowrap;
+}
+.sc_store .info_content .link_list ul a::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+.sc_store .info_content .link_list ul .floor a::before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_floor_32.png) center/contain no-repeat;
+}
+.sc_store .info_content .link_list ul .restaurant a::before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_food_32.png) center/contain no-repeat;
+}
+.sc_store .info_content .link_list ul .location a::before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_parking_32.png) center/contain no-repeat;
+}
+.sc_store .news_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+.sc_store .news_area .tit_wrap {
+  position: relative;
+  width: 443px;
+  border-top: 1px solid #171a19;
+}
+.sc_store .news_area .tit_wrap h3 {
+  position: absolute;
+  top: -13px;
+  right: 0;
+  width: 106px;
+  padding-left: 32px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.sc_store .news_area .tit_wrap .btn_link {
+  position: absolute;
+  bottom: 16px;
+  right: 72px;
+  text-decoration: underline;
+}
+.sc_store .news_area .news_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sc_store .news_area .news_list li {
+  position: relative;
+}
+.sc_store .news_area .news_list li a {
+  position: relative;
+  display: block;
+  width: 310px;
+  height: 240px;
+  overflow: hidden;
+}
+.sc_store .news_area .news_list li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(192.26deg, rgba(0, 0, 0, 0) 18.01%, rgba(0, 0, 0, 0.6) 92.31%);
+  visibility: hidden;
+  opacity: 0;
+}
+.sc_store .news_area .news_list li .info_box {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  visibility: hidden;
+  opacity: 0;
+}
+.sc_store .news_area .news_list li .info_box .tit {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.sc_store .news_area .news_list li .info_box .date {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.5;
+}
+.sc_store .news_area .news_list li:hover a::before {
+  visibility: visible;
+  opacity: 1;
+}
+.sc_store .news_area .news_list li:hover .info_box {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sc_culture {
+  position: relative;
+  margin-top: 180px;
+}
+.sc_culture .headline {
+  width: 1440px;
+  margin: 0 auto;
+}
+.sc_culture .culture_slider {
+  position: relative;
+  overflow-x: hidden;
+}
+.sc_culture .culture_slider .swiper-slide {
+  width: 472px !important;
+  height: 472px;
+  margin-right: 9px;
+}
+.sc_culture .culture_slider .swiper-slide a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sc_culture .culture_slider .swiper-slide a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(168.48deg, rgba(0, 0, 0, 0) 11.61%, rgba(0, 0, 0, 0.5) 85.71%);
+}
+.sc_culture .culture_slider .swiper-slide a .info {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: #fff;
+}
+.sc_culture .culture_slider .swiper-slide a .info .tit {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.sc_culture .culture_slider .swiper-slide a .info .date {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sc_popup {
+  position: relative;
+  margin-top: 180px;
+}
+.sc_popup .popup_slider {
+  overflow: hidden;
+}
+.sc_popup .popup_slider .swiper-slide {
+  width: 351px !important;
+  height: 493px;
+  margin-right: 9px;
+}
+.sc_popup .popup_slider .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sc_popup .popup_slider .swiper-slide img {
+  width: 100%;
+  height: 351px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc_popup .popup_slider .info {
+  margin-top: 24px;
+}
+.sc_popup .popup_slider .info .tit {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.sc_popup .popup_slider .info .desc {
+  height: 48px;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  letter-spacing: -0.25px;
+}
+.sc_popup .popup_slider .info .date {
+  margin-top: 12px;
+  color: #727573;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sc_banner {
+  position: relative;
+  margin-top: 120px;
+}
+.sc_banner .btn_wrap {
+  top: -40px;
+}
+.sc_banner .banner_slider {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.sc_banner .banner_slider .swiper-slide {
+  width: 714px !important;
+  height: 200px;
+}
+.sc_banner .banner_slider a {
+  display: block;
+}
+.sc_banner .banner_slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.sc_online {
+  margin-top: 120px;
+}
+.sc_online .online_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 78px;
+}
+.sc_online .online_list li {
+  width: 426px;
+}
+.sc_online .online_list li a {
+  position: relative;
+  display: block;
+  padding: 32px 20px;
+  border-top: 1px solid #eaebea;
+  border-bottom: 1px solid #eaebea;
+}
+.sc_online .online_list li a:before {
+  content: "";
+  display: inline-block;
+  margin-right: 24px;
+  width: 56px;
+  height: 56px;
+  vertical-align: top;
+}
+.sc_online .online_list li a:after {
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  right: 20px;
+  width: 80px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_main_arrow_gate.png) center/contain no-repeat;
+}
+.sc_online .online_list li.tohome a:before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_shop01.png) center/contain no-repeat;
+}
+.sc_online .online_list li.dotcom a:before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_shop02.png) center/contain no-repeat;
+}
+.sc_online .online_list li.mall a:before {
+  background: url(https://www.ehyundai.com/images/webhome2/main/ico_shop03.png) center/contain no-repeat;
+}
+.sc_online .online_list li .txt_wrap {
+  display: inline-block;
+}
+.sc_online .online_list li .txt_wrap .name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.sc_online .online_list li .txt_wrap .desc {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #727573;
+  line-height: 1.5;
+}
+
+.sc_trend {
+  position: relative;
+  height: 840px;
+  margin-top: 180px;
+  overflow: hidden;
+}
+.sc_trend .headline {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sc_trend .marquee {
+  position: absolute;
+}
+.sc_trend .trend_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+}
+.sc_trend .trend_wrap .title p {
+  margin-right: 44px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.sc_trend .trend_wrap .trend_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  height: 840px;
+}
+.sc_trend .trend_wrap .trend_list .swiper {
+  height: 100%;
+}
+.sc_trend .trend_wrap .trend_list ul {
+  width: 351px;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.sc_trend .trend_wrap .trend_list ul li {
+  width: 351px;
+  height: 351px;
+}
+.sc_trend .trend_wrap .trend_list ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sc_trend .trend_wrap .trend_list ul li a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8.13%, rgba(0, 0, 0, 0)), color-stop(97.33%, rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 8.13%, rgba(0, 0, 0, 0.5) 97.33%);
+}
+.sc_trend .trend_wrap .trend_list ul li a .info {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.sc_trend .trend_wrap .trend_list ul li a .info .tit {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.sc_trend .trend_wrap .trend_list ul li a .info .desc {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.sc_trend .trend_wrap .trend_list ul li a:hover .info {
+  opacity: 1;
+  visibility: visible;
+}
+.sc_trend .trend_wrap .trend_list ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@-webkit-keyframes slide1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes slide1 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes slide2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+@keyframes slide2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+.sc_trend .marquee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 312px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+  z-index: -1;
+}
+.sc_trend .marquee .marquee_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: marquee 80s infinite linear;
+          animation: marquee 80s infinite linear;
+}
+.sc_trend .marquee .marquee_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sc_trend .marquee .marquee_list .item {
+  white-space: nowrap;
+  font-size: 240px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.sc_brand {
+  margin-top: 180px;
+}
+.sc_brand .inner {
+  position: relative;
+}
+.sc_brand .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sc_brand .head h2 {
+  padding-bottom: 0;
+}
+.sc_brand .head .tab_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+.sc_brand .head .tab_nav a {
+  position: relative;
+  color: #9b9e9c;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.sc_brand .head .tab_nav a.on {
+  color: #171a19;
+}
+.sc_brand .head .tab_nav a.on:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #171a19 transparent transparent #171a19;
+}
+.sc_brand .tab_con {
+  margin-top: 26px;
+}
+.sc_brand .tab_con .con {
+  display: none;
+}
+.sc_brand .tab_con .con.on {
+  display: block;
+}
+.sc_brand .tab_con .brand_slider {
+  width: 1440px;
+  overflow: hidden;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide > a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide img {
+  width: 100%;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info {
+  position: absolute;
+  bottom: 64px;
+  right: 72px;
+  width: 340px;
+  color: #fff;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info .tit {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info .desc {
+  height: 48px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info .btn_link {
+  position: relative;
+  display: block;
+  width: 172px;
+  padding: 8px 70px 7px 16px;
+  margin-top: 32px;
+  border: 2px solid #fff;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info .btn_link span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .info .btn_link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_arrow_link_white_thick.png) center/contain no-repeat;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box1 {
+  position: relative;
+  -webkit-box-flex: 5.23;
+      -ms-flex: 5.23 1 0px;
+          flex: 5.23 1 0;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box1 > a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(192.26deg, rgba(0, 0, 0, 0) 18.01%, rgba(0, 0, 0, 0.3) 92.31%);
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box2 li {
+  position: relative;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box2 li .txt {
+  display: block;
+  padding-top: 35%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -1.2px;
+}
+.sc_brand .tab_con .brand_slider .swiper-slide .box3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0.1px;
+          flex: 1 1 0.1px;
+}
+
+.btn_top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 72px;
+  height: 72px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_top_72_black.png) center/contain no-repeat;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: none;
+}
+.popup:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.popup .pop_stroe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 956px;
+  min-height: 750px;
+  background: #fff;
+}
+.popup .pop_stroe .inner {
+  position: relative;
+  width: auto;
+  padding: 38px 40px 48px;
+}
+.popup .pop_stroe .inner .head {
+  border-bottom: 2px solid #171a19;
+  padding-bottom: 16px;
+}
+.popup .pop_stroe .inner .head h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.popup .pop_stroe .inner .head .btn_close {
+  position: absolute;
+  top: 44px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  background: url(https://www.ehyundai.com/images/webhome2/ico_close_32_black.png) center/cover no-repeat;
+}
+.popup .pop_stroe .inner .body {
+  max-height: 638px;
+  padding-top: 40px;
+  overflow-y: auto;
+}
+.popup .pop_stroe .inner .body .item .tit {
+  margin: 32px 0 24px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.popup .pop_stroe .inner .body .item:first-child .tit {
+  margin-top: 0;
+}
+.popup .pop_stroe .inner .body .item .site_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.popup .pop_stroe .inner .body .item .site_list li {
+  width: 25%;
+  height: 60px;
+  border-right: 1px solid #d4d6d4;
+  border-bottom: 1px solid #d4d6d4;
+}
+.popup .pop_stroe .inner .body .item .site_list li a {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+.popup .pop_stroe .inner .body .item .site_list li.current {
+  border: 2px solid #00815a !important;
+}
+.popup .pop_stroe .inner .body .item .site_list li.current a {
+  color: #00815a;
+  font-weight: 700;
+}
+.popup .pop_stroe .inner .body .item .site_list li:nth-child(4n+1) {
+  border-left: 1px solid #d4d6d4;
+}
+.popup .pop_stroe .inner .body .item .site_list li:not(:nth-child(n+5)) {
+  border-top: 1px solid #d4d6d4;
+}/*# sourceMappingURL=style.css.map */

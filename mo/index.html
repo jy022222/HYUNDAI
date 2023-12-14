@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>현대백화점 (mo)</title>
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="blind">더현대</span>
+                    </a>
+                    <button class="btn_site">
+                        <span class="blind">현대백화점/더현대닷컴 열기</span>
+                    </button>
+                    <ul class="brand_list">
+                        <li><a href="#">현대백화점</a></li>
+                        <li><a href="#">더현대닷컴</a></li>
+                    </ul>
+                </h1>
+                <div class="util_area">
+                    <button class="btn_search" onclick="$('.all_search').addClass('show')">
+                        <span class="blind">지점정보 검색</span>
+                    </button>
+                    <button class="btn_allMenu" onclick="$('.all_menu').addClass('show')">
+                        <span class="blind">전체메뉴 열기</span>
+                    </button>
+                </div>
+            </div>
+            <div class="all_search">
+                <div class="head">
+                    <h2>검색</h2>
+                    <button class="btn_close" onclick="$('.all_search').removeClass('show')">
+                        <span class="blind">지점정보 검색창 닫기</span>
+                    </button>
+                </div>
+                <div class="body">
+                    <div class="form_area">
+                        <form action="">
+                            <div class="select">
+                                <a href="#">
+                                    <span>전체지점</span>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="검색어를 입력해주세요.">
+                                <button class="btn_sch">
+                                    <span class="blind">검색</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="keyword_area">
+                        <h3>인기검색어</h3>
+                        <ul class="keyword_list">
+                            <li><a href="#">자라</a></li>
+                            <li><a href="#">COS</a></li>
+                            <li><a href="#">폴로</a></li>
+                            <li><a href="#">PEER</a></li>
+                            <li><a href="#">나이키</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="all_menu">
+                <div class="head">
+                    <div class="top_bar">
+                        <a class="home" href="#">
+                            <span class="blind">홈화면 가기</span>
+                        </a>
+                        <div class="btn_wrap">
+                            <button class="btn_search">
+                                <span class="blind">검색</span>
+                            </button>
+                            <button class="btn_close" onclick="$('.all_menu').removeClass('show')">
+                                <span class="blind">전체메뉴 닫기</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="login_area">
+                        <div class="txt_box">
+                            <p><strong>로그인</strong>하고 <br>
+                                현대백화점을 즐겨보세요!
+                            </p>
+                        </div>
+                        <a href="#" class="btn_link">로그인</a>
+                    </div>
+                </div>
+                <div class="gnb_list">
+                    <ul>
+                        <li class="on"><a href="#">지점안내</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">더현대</p>
+                                    <div class="img">
+                                        <img src="https://www.ehyundai.com/images/mobilehome2/main/img_all_menu_pic01.jpg"
+                                            alt>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">더현대 서울</a></li>
+                                        <li><a href="#">더현대 대구</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">현대백화점</p>
+                                    <div class="img">
+                                        <img src="https://www.ehyundai.com/images/mobilehome2/main/img_all_menu_pic02.jpg"
+                                            alt>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">압구정본점</a></li>
+                                        <li><a href="#">무역센터점</a></li>
+                                        <li><a href="#">천호점</a></li>
+                                        <li><a href="#">신촌점</a></li>
+                                        <li><a href="#">미아점</a></li>
+                                        <li><a href="#">목동점</a></li>
+                                        <li><a href="#">중동점</a></li>
+                                        <li><a href="#">킨텍스점</a></li>
+                                        <li><a href="#">디큐브시티</a></li>
+                                        <li><a href="#">판교점</a></li>
+                                        <li><a href="#">부산점</a></li>
+                                        <li><a href="#">울산점</a></li>
+                                        <li><a href="#">울산동구점</a></li>
+                                        <li><a href="#">충청점</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">현대아울렛</p>
+                                    <div class="img">
+                                        <img src="https://www.ehyundai.com/images/mobilehome2/main/img_all_menu_pic03.jpg"
+                                            alt>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">김포점</a></li>
+                                        <li><a href="#">송도점</a></li>
+                                        <li><a href="#">대전점</a></li>
+                                        <li><a href="#">SPACE 1</a></li>
+                                        <li><a href="#">동대문점</a></li>
+                                        <li><a href="#">가산점</a></li>
+                                        <li><a href="#">가든파이브점</a></li>
+                                        <li><a href="#">대구점</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">서비스 · 이벤트</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">VIP 프로그램</p>
+                                    <ul>
+                                        <li><a href="#">선정 기준</a></li>
+                                        <li><a href="#">VIP 혜택</a></li>
+                                        <li><a href="#">마일리지 적립</a></li>
+                                        <li><a href="#">리워드</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">고객 서비스</a>
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">고객의 의견</a></li>
+                                        <li><a href="#">자주 하는 질문</a></li>
+                                        <li><a href="#">서비스 제도</a></li>
+                                        <li><a href="#">약관 및 기타 방침 안내</a></li>
+                                        <li><a href="#">주요 문의처</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">행복 인사이트 위원회</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">이벤트</p>
+                                    <ul>
+                                        <li><a href="#">진행 이벤트</a></li>
+                                        <li><a href="#">당첨자 발표</a></li>
+                                        <li><a href="#">어린이그림그리기대회</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">콘텐츠</p>
+                                    <ul>
+                                        <li><a href="#">서체 다운로드</a></li>
+                                        <li><a href="#">STYLE H 매거진</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">브랜드</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">컨템포러리</p>
+                                    <ul>
+                                        <li><a href="#">FORUM</a></li>
+                                        <li><a href="#">톰그레이하운드</a></li>
+                                        <li><a href="#">PEER</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">해외패션</p>
+                                    <ul>
+                                        <li><a href="#">THE BASH</a></li>
+                                        <li><a href="#">오프웍스</a></li>
+                                        <li><a href="#">LABLES</a></li>
+                                        <li><a href="#">슈페이스</a></li>
+                                        <li><a href="#">슈라이브러리</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">라이프스타일</p>
+                                    <ul>
+                                        <li><a href="#">B CLEAN</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">리빙</p>
+                                    <ul>
+                                        <li><a href="#">HBYH</a></li>
+                                        <li><a href="#">위마켓</a></li>
+                                        <li><a href="#">르쁠라 H</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">현대식품관</p>
+                                    <ul>
+                                        <li><a href="#">명인명촌</a></li>
+                                        <li><a href="#">와인웍스</a></li>
+                                        <li><a href="#">원테이블</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">컨텐츠 · 채널</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">콘텐츠</p>
+                                    <ul>
+                                        <li><a href="#">3분 쇼핑</a></li>
+                                        <li><a href="#">에디토리얼 디파트먼트</a></li>
+                                        <li><a href="#">그로서리 가이드</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">채널</p>
+                                    <ul>
+                                        <li><a href="#" class="link">인스타그램</a></li>
+                                        <li><a href="#" class="link">페이스북</a></li>
+                                        <li><a href="#" class="link">블로그</a></li>
+                                        <li><a href="#" class="link">포스트</a></li>
+                                        <li><a href="#" class="link">현대백화점 유튜브</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">문화센터 · 전시 · 공연</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">CH 1985 · 문화센터</a>
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">CH 1985</a></li>
+                                        <li><a href="#">문화센터</a></li>
+                                        <li><a href="#">나의 강의실</a></li>
+                                        <li><a href="#" class="link">공식 유튜브</a></li>
+                                        <li><a href="#" class="link">공식 인스타그램</a></li>
+                                        <li><a href="#" class="link">공식 블로그</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">전시 · 공연</p>
+                                    <ul>
+                                        <li><a href="#">공간 소개</a></li>
+                                        <li><a href="#">진행 중인 전시 · 공연</a></li>
+                                        <li><a href="#">지난 전시 · 공연</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">카드 · 상품권 · 멤버십</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">현대백화점 카드</a>
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">카드소개 · 신청</a></li>
+                                        <li><a href="#">마이카드</a></li>
+                                        <li><a href="#">카드 이벤트</a></li>
+                                        <li><a href="#">웰컴 라운지</a></li>
+                                        <li><a href="#">ARS 카드 상담</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">상품권</a>
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">상품권 소개</a></li>
+                                        <li><a href="#">구입 안내</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">주 · 머니</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">H.point 멤버십</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">더클럽웨딩</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">비대면 · 온라인쇼핑</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <ul>
+                                        <li><a href="#" class="link">더현대닷컴</a></li>
+                                        <li><a href="#" class="link">온라인 쇼룸</a></li>
+                                        <li><a href="#" class="link">현대식품관 투홈</a></li>
+                                        <li><a href="#" class="link">현대 Hmall</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">ESG 경영</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">Green Friends</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">Project 100</p>
+                                    <ul>
+                                        <li><a href="#">Project 100</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">CSR</a>
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">사회 공헌 활동</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">ESG 평가</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">ESG 정보</p>
+                                    <ul>
+                                        <li><a href="#">기업 지배 구조</a></li>
+                                        <li><a href="#">내부 규정</a></li>
+                                        <li><a href="#">안전 보건 경영</a></li>
+                                        <li><a href="#">노동조합 현황</a></li>
+                                        <li><a href="#">인재 육성 및 채용</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">지속가능경영보고서</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">투자정보</a>
+                            <div class="gnb_sub">
+                                <div class="item">
+                                    <p class="tit">이사회</p>
+                                    <ul>
+                                        <li><a href="#">이사회 구성</a></li>
+                                        <li><a href="#">이사회 주요 활동</a></li>
+                                        <li><a href="#">위원회</a></li>
+                                        <li><a href="#">주주정보</a></li>
+                                        <li><a href="#">주주총회</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">요약재무정보</p>
+                                    <ul>
+                                        <li><a href="#">재무 하이라이트</a></li>
+                                        <li><a href="#">손익계산서</a></li>
+                                        <li><a href="#">대차대조표</a></li>
+                                        <li><a href="#">신용등급</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#" class="link">주가정보</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">
+                                        <a href="#">배당정보</a>
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">공시정보</p>
+                                    <ul>
+                                        <li><a href="#">공시정보</a></li>
+                                        <li><a href="#">공고사항</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <p class="tit">IR</p>
+                                    <ul>
+                                        <li><a href="#">IR 미팅 예약</a></li>
+                                        <li><a href="#">IR 자료실</a></li>
+                                        <li><a href="#">IR FAQ</a></li>
+                                        <li><a href="#">IR Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="link">현대백화점 그룹</a></li>
+                    </ul>
+                </div>
+                <div class="family_area">
+                    <button>
+                        <p>현대백화점 패밀리 앱</p>
+                        <i></i>
+                    </button>
+                    <div class="content">
+                        <div class="family_box">
+                            <p class="tit">모바일 앱 바로가기</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점카드</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>H.Point</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>더현대닷컴</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대식품관투홈</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>H.mall</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>MOKA</span>
+                                    </a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="family_box">
+                            <p class="tit">SNS 채널 바로가기</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점 플러스친구</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점 유튜브</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>인스타그램</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>페이스북</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점 <br> 블로그</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"></div>
+                                        <span>현대백화점 포스트</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="headline blind">메인 슬라이더</h2>
+                <div class="swiper visual_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://www.ehyundai.com/attachfiles/portal/20231106111947803.png"
+                                    alt="해리의 꿈의 상점 La Boutique d' Harry">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://www.ehyundai.com/attachfiles/portal/20231106112004654.png"
+                                    alt="현대백화점 홈페이지 고객 설문조사 이벤트 설문조사기간 2023.10.30(월) ~ 11.12(일)">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="btn_pause">
+                        <span class="blind">자동재생정지</span>
+                    </button>
+                </div>
+                <div class="banner">
+                    <a href="#">
+                        <img src="https://www.ehyundai.com/attachfiles/portal/20231106112044870.png"
+                            alt="3분쇼핑 ep.41 단풍을 닮은 메이크업">
+                    </a>
+                </div>
+            </section>
+            <section class="sc_store">
+                <h2 class="headline">
+                    <a href="#">더현대 서울</a>
+                </h2>
+                <div class="info_content">
+                    <div class="title">
+                        <a href="#">
+                            <strong>SEOUL</strong>
+                            <span>THE HYUNDAI</span>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="thumb">
+                            <img src="https://www.ehyundai.com/images/mobilehome2/main/branch/img_mo_branch_main_B00140000.jpg" alt>
+                            <a href="#" class="btn_link">
+                                <span>지점안내 바로가기</span>
+                            </a>
+                        </div>
+                        <div class="data">
+                            <p class="time">오늘 영업시간 10:30 ~ 20:00</p>
+                            <div class="tel">
+                                <span>대표전화</span>
+                                <strong>02-767-2233</strong>
+                            </div>
+                            <div class="off">
+                                <span>휴&nbsp;&nbsp;점&nbsp;&nbsp;일</span>
+                                <strong>11.13(월)</strong>
+                            </div>
+                        </div>
+                        <div class="link_list">
+                            <ul>
+                                <li class="floor"><a href="#">층별안내</a></li>
+                                <li class="news"><a href="#">쇼핑뉴스</a></li>
+                                <li class="restaurant"><a href="#">식당가</a></li>
+                                <li class="location"><a href="#">위치/주차</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc_culture">
+                <h2 class="headline">영감을 채워주는, Culture</h2>
+                <div class="culture_slider swiper">
+                    <div class="swiper-wrapper" id="cultureList"> </div>
+                </div>
+            </section>
+            <section class="sc_popup">
+                <h2 class="headline">지금 살펴봐야 할, POPUP-UP Store</h2>
+                <div class="popup_slider swiper">
+                    <div class="swiper-wrapper" id="popupList"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="sc_banner">
+                <h2 class="blind">현대백화점 광고/홍보 배너</h2>
+                <div class="banner_slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_banner01.jpg"
+                                    alt="가입비/연회비 평생없는 현대백화점 카드">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://www.ehyundai.com/html/main/20230703/mobile/images/img_main_banner03.jpg"
+                                    alt="머물수록 즐거움이 쌓이는 H.Point">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="btn_pause">
+                        <span class="blind">자동재생 정지</span>
+                    </button>
+                </div>
+            </section>
+            <section class="sc_trend">
+                <h2 class="headline">이야기를 품은, <br> Contents</h2>
+                <div class="trend_list">
+                    <div class="swiper trend_slider1">
+                        <ul class="swiper-wrapper" id="trendList"></ul>
+                    </div>
+                    <div class="swiper trend_slider2">
+                        <ul class="swiper-wrapper" id="trendList2">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231006/con_now_edi_mb.jpg"
+                                        alt="에디토리얼 디파트먼트">
+                                    <div class="info">
+                                        <p class="tit">에디토리얼 디파트먼트</p>
+                                        <p class="desc">세상에 하나뿐인 지속가능한 콘텐츠를 찾아서</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231103/img_con_3m_42_mb.jpg"
+                                        alt="3분쇼핑 EP.42">
+                                    <div class="info">
+                                        <p class="tit">3분쇼핑 EP.42</p>
+                                        <p class="desc">연말의 홀리데이를 준비하는 너에게</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231024/img_cont_mb_ep14_grocery.jpg"
+                                        alt="그로서리가이드 EP.14">
+                                    <div class="info">
+                                        <p class="tit">그로서리가이드 EP.14</p>
+                                        <p class="desc">THE HIP하게 가을라면 즐기기</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231006/con_now_edi_mb.jpg"
+                                        alt="에디토리얼 디파트먼트">
+                                    <div class="info">
+                                        <p class="tit">에디토리얼 디파트먼트</p>
+                                        <p class="desc">세상에 하나뿐인 지속가능한 콘텐츠를 찾아서</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231103/img_con_3m_42_mb.jpg"
+                                        alt="3분쇼핑 EP.42">
+                                    <div class="info">
+                                        <p class="tit">3분쇼핑 EP.42</p>
+                                        <p class="desc">연말의 홀리데이를 준비하는 너에게</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="tag">
+                                        <span>매거진</span>
+                                    </div>
+                                    <img src="https://www.ehyundai.com/html/main/20231024/img_cont_mb_ep14_grocery.jpg"
+                                        alt="그로서리가이드 EP.14">
+                                    <div class="info">
+                                        <p class="tit">그로서리가이드 EP.14</p>
+                                        <p class="desc">THE HIP하게 가을라면 즐기기</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </section>
+            <section class="sc_brand">
+                <h2 class="headline">취향대로 살피는, Brand</h2>
+                <div class="tab_nav">
+                    <a href data-tab="#tab1" class="on">패션&뷰티</a>
+                    <a href data-tab="#tab2">리빙&라이프스타일</a>
+                    <a href data-tab="#tab3">현대식품관</a>
+                </div>
+                <div class="tab_con">
+                    <div class="con on" id="tab1">
+                        <div class="brand_slider slider1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_big_03.jpg"
+                                                alt="Be Clean">
+                                            <div class="info">
+                                                <p class="tit">Be CLEAN</p>
+                                                <p class="desc">친환경 제품과 인디뷰티 브랜드를 <br>
+                                                    큐레이션한 클린뷰티 전문 스토어
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>구매하기</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_long_03.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm01_03.jpg"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm03_03.jpg"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm02_03.jpg"
+                                                            alt=""></a></li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        Be CLEAN 의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_big.jpg"
+                                                alt="FOURM">
+                                            <div class="info">
+                                                <p class="tit">FOURM</p>
+                                                <p class="desc">현대백화점과 한섬이 제안하는 <br>
+                                                    새롭고 감각적인 패션 편집숍
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>구매하기</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_long.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm03.jpg"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm02.jpg"
+                                                            alt=""></a></li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        FOURM의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_big_01.jpg"
+                                                alt="PEER">
+                                            <div class="info">
+                                                <p class="tit">PEER</p>
+                                                <p class="desc">MZ문화를 새롭게 발견하는 <br>
+                                                    스트리트 패션 & 컬쳐 편집숍
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>구매하기</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_long_01.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm01_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm03_01.jpg"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img
+                                                            src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm02_01.jpg"
+                                                            alt=""></a></li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        PEER의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_big_02.jpg"
+                                                alt="LABELS">
+                                            <div class="info">
+                                                <p class="tit">LABELS</p>
+                                                <p class="desc">컨템포러리 브랜드의 시그니처 아이템을 <br>
+                                                    제안하는 트렌디 감성 수입 편집숍
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>매장안내</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_long_02.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm01_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm03_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_brand_sm02_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        LABELS의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con" id="tab2">
+                        <div class="brand_slider slider2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_big_01.jpg"
+                                                alt="위마켓">
+                                            <div class="info">
+                                                <p class="tit">위마켓</p>
+                                                <p class="desc">현대백화점이 직접 큐레이팅하는 <br>
+                                                    라이프스타일 마켓
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>매장안내</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_long_01.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm01_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm03_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm02_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        위마켓의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_big_02.jpg"
+                                                alt="르쁠라H">
+                                            <div class="info">
+                                                <p class="tit">르쁠라H</p>
+                                                <p class="desc">세계 각국의 Heritage 브랜드와 <br>
+                                                    트렌드 테이블웨어 브랜드를 큐레이션한 공간
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>매장안내</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_long_02.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm01_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm03_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm02_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        르쁠라 H의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_big.jpg"
+                                                alt="HBYH">
+                                            <div class="info">
+                                                <p class="tit">HBYH</p>
+                                                <p class="desc">다양한 리빙 아이템과 라이프스타일 트렌드를 <br>
+                                                    제안하는 리빙 라이프스타일 샵
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>매장안내</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_long.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm03.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_living_sm02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        HBYH의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con" id="tab3">
+                        <div class="brand_slider slider3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_big.jpg"
+                                                alt="명인명촌">
+                                            <div class="info">
+                                                <p class="tit">명인명촌</p>
+                                                <p class="desc">전국에서 전통을 고수하는 80여명의 장인들의 <br>
+                                                    상품을 소개하는 프리미엄 전통식품 브랜드
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>구매하기</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_long.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm03.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        명인명촌의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_big_01.jpg"
+                                                alt="와인웍스">
+                                            <div class="info">
+                                                <p class="tit">와인웍스</p>
+                                                <p class="desc">와인, 다이닝, 커뮤니티가 공존하는 <br>
+                                                    최대 규모 와인 중심 복합 공간
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>매장안내</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_long_01.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm01_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm03_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm02_01.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        와인웍스의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box1">
+                                        <a href="#">
+                                            <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_big_02.jpg"
+                                                alt="원테이블">
+                                            <div class="info">
+                                                <p class="tit">원테이블</p>
+                                                <p class="desc">현대백화점이 만든 프리미엄 <br>
+                                                    가정 간편식 브랜드
+                                                </p>
+                                                <a href="#" class="btn_link">
+                                                    <span>구매하기</span>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="box2">
+                                        <div>
+                                            <a href="#">
+                                                <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_long_02.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm01_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm03_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://www.ehyundai.com/html/main/renewal/mobile/images/img_main_food_sm02_02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="txt">
+                                                        원테이블의 <br>
+                                                        최신 소식을 <br>
+                                                        만나보세요
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="inner">
+                <div class="logo">
+                    <span class="blind">THE HYUNDAI</span>
+                </div>
+                <div class="link_area">
+                    <div class="group">
+                        <p class="tit" style="width: 136px;">
+                            <a href="#">현대백화점그룹</a>
+                        </p>
+                        <ul>
+                            <li><a href="#">현대백화점그룹</a></li>
+                            <li><a href="#">현대백화점</a></li>
+                            <li><a href="#">현대홈쇼핑</a></li>
+                            <li><a href="#">현대그린푸드</a></li>
+                            <li><a href="#">현대캐터링시스템</a></li>
+                            <li><a href="#">C&S푸드시스템</a></li>
+                            <li><a href="#">한섬</a></li>
+                            <li><a href="#">현대리바트</a></li>
+                            <li><a href="#">현대L&C</a></li>
+                            <li><a href="#">현대백화점면세점</a></li>
+                            <li><a href="#">현대드림투어</a></li>
+                            <li><a href="#">현대렌탈케어</a></li>
+                            <li><a href="#">현대퓨처넷</a></li>
+                            <li><a href="#">에버다임</a></li>
+                            <li><a href="#">현대IT&E</a></li>
+                            <li><a href="#">현대바이오랜드</a></li>
+                            <li><a href="#">현대이지웰</a></li>
+                            <li><a href="#">벤디스(식권대장)</a></li>
+                            <li><a href="#">현대백화점그룹 <br> 사회복지재단</a></li>
+                            <li><a href="#">상품본부</a></li>
+                            <li><a href="#">협력사원 커뮤니티티</a></li>
+                            <li><a href="#">현대식품관 투홈</a></li>
+                            <li><a href="#">현대지에프홀딩스</a></li>
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <p class="tit" style="width: 98px;">
+                            <a href="#">언어선택</a>
+                        </p>
+                        <ul>
+                            <li><a href="#">ENG</a></li>
+                            <li><a href="#">中國語</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_list">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">APP 다운</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">PC버전</a></li>
+                    </ul>
+                </div>
+                <address class="address">
+                    <p>주식회사 현대백호점 대표이사 : 장호진 외2인</p>
+                    <p>서울시 강남구 테헤란로 98길 12</p>
+                    <p>사업자등록번호 : 211-87-21455 <a href="#">사업자등록확인</a></p>
+                    <p>통신판매업 신고 : 강남-01882</p>
+                </address>
+                <small class="copyright">© Hyundai Department Store. All rights reserved.</small>
+                <button class="btn_top">
+                    <span class="blind">상단으로</span>
+                </button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
